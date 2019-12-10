@@ -1,1 +1,1 @@
-# pthon-CI
+# python-CI
