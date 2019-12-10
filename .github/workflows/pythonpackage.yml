@@ -9,7 +9,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.6, 3.7]
+        python-version: [3.7]
 
     steps:
     - uses: actions/checkout@v1
@@ -23,5 +23,5 @@ jobs:
     - name: flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
-        - flake8 --max-line-length=79 python-CI/*.py
+        - flake8 --max-line-length=79 python-CI/Hello-world.py
     
